@@ -1,0 +1,24 @@
+<!doctype html>
+    <title>HI THERE. THIS IS WHERE IT LOADS UP</title>
+    <script src="js/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/dist/js/bootstrap.js"></script>
+    <script src="angular/angular.min.js"></script>
+    <script src="main/main.js"></script>
+    <script src="main/service/searchservice.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.css"></script>
+    <!-- Page -->
+    
+    
+    <div class="input-group row" style="margin:30px" ng-app="search" >
+        <div ng-controller ='searchController as sc'>
+            <p>{{sc.appName}} </p>
+            <p>
+                <input class="" placeholder="Enter what your are searching for and Click "></input>
+                <button type="button" class="btn btn-primary" ng-click='sc.search();'>SEARCH</button>
+            </p>
+            
+        </div>
+    </div>
+
+</html>
